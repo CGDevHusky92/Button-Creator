@@ -10,6 +10,15 @@
 #import <QuartzCore/QuartzCore.h>
 
 @implementation TabBarCreatorViewController
+@synthesize generateButton;
+
+@synthesize picNameField;
+@synthesize userNameField;
+@synthesize widthField;
+@synthesize heightField;
+
+@synthesize scrollView;
+
 
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {
@@ -68,19 +77,44 @@
     return (interfaceOrientation != UIInterfaceOrientationPortraitUpsideDown);
 }
 
+#pragma mark -
+#pragma mark ButtonCreator Methods
+
+-(IBAction)generateButtonPressed:(id)sender {
+    
+    for (int x = 0; x < 2; x++) {
+        //Running it twice fixes a change in subview bug
+        //Quick and dirty fix....
+        for (int i = 0; i < [scrollView.subviews count]; i++) {
+            [[scrollView.subviews objectAtIndex:i] removeFromSuperview];
+        }
+        
+        [self createTabBarImageOnDesktopWithName:picNameField.text onUserDesktop:userNameField.text withWidth:[widthField.text intValue] andHeight:[heightField.text intValue]];
+    }
+    
+    [picNameField resignFirstResponder];
+    [userNameField resignFirstResponder];
+    [widthField resignFirstResponder];
+    [heightField resignFirstResponder];
+}
+
 -(void)createTabBarImageOnDesktopWithName:(NSString *)name onUserDesktop:(NSString *)user withWidth:(int)width andHeight:(int)height {
     
     //TabBar or custome generator.... to generate a TabBar for a Mac App or something else...
     //Good Mac width
-    UITabBar *tabBar = [[UITabBar alloc] initWithFrame:CGRectMake(10, 10, 400, 44)];
+    UITabBar *tabBar = [[UITabBar alloc] initWithFrame:CGRectMake(10, 10, width, height)];
     UIGraphicsBeginImageContext(tabBar.frame.size);
     CGContextRef theContext = UIGraphicsGetCurrentContext();
     [[tabBar layer] renderInContext:theContext];
     
+    [self.scrollView addSubview:tabBar];
+    
+    scrollView.contentSize = CGSizeMake(width + 20, height + 20);
+    
     UIImage *theImage = UIGraphicsGetImageFromCurrentImageContext();
     NSData *theData = UIImagePNGRepresentation(theImage);
     
-    NSString *path = [NSString stringWithFormat:@"/Users/%@/Desktop/TabBar.png", user];
+    NSString *path = [NSString stringWithFormat:@"/Users/%@/Desktop/%@.png", user, name];
     
     [theData writeToFile:path atomically:NO];
     
