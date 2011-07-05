@@ -1,0 +1,3 @@
+This project was done just to expand the usability of creating customized UIButton images using UIGlassButton class that is no longer used.
+
+I expanded it and made a GUI for the code. I am also adding a TabBar creator. I plan on using it for my Mac Applications to add a TabBar. It can be used however you like. It is only designed to run in the simulator because it saves the image to the Desktop directory. You must type in the user name used on the computer for the image to be saved there.
