@@ -1,0 +1,293 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		2E09D53B13C39DB200EA1002 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2E09D53A13C39DB200EA1002 /* UIKit.framework */; };
+		2E09D53D13C39DB200EA1002 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2E09D53C13C39DB200EA1002 /* Foundation.framework */; };
+		2E09D53F13C39DB200EA1002 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2E09D53E13C39DB200EA1002 /* CoreGraphics.framework */; };
+		2E09D54513C39DB200EA1002 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 2E09D54313C39DB200EA1002 /* InfoPlist.strings */; };
+		2E09D54713C39DB200EA1002 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 2E09D54613C39DB200EA1002 /* main.m */; };
+		2E09D54B13C39DB200EA1002 /* ButtonCreatorAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 2E09D54A13C39DB200EA1002 /* ButtonCreatorAppDelegate.m */; };
+		2E09D55513C39DB200EA1002 /* TabBarCreatorViewController.h in Resources */ = {isa = PBXBuildFile; fileRef = 2E09D55413C39DB200EA1002 /* TabBarCreatorViewController.h */; };
+		2E09D55713C39DB200EA1002 /* TabBarCreatorViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2E09D55613C39DB200EA1002 /* TabBarCreatorViewController.m */; };
+		2E09D56113C39DB300EA1002 /* TabBarCreatorViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2E09D55F13C39DB300EA1002 /* TabBarCreatorViewController.xib */; };
+		2E09D56A13C39DE800EA1002 /* ButtonCreatorViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2E09D56813C39DE800EA1002 /* ButtonCreatorViewController.m */; };
+		2E09D56B13C39DE800EA1002 /* ButtonCreatorViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2E09D56913C39DE800EA1002 /* ButtonCreatorViewController.xib */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		2E09D53613C39DB200EA1002 /* ButtonCreator.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ButtonCreator.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		2E09D53A13C39DB200EA1002 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		2E09D53C13C39DB200EA1002 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		2E09D53E13C39DB200EA1002 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		2E09D54213C39DB200EA1002 /* ButtonCreator-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "ButtonCreator-Info.plist"; sourceTree = "<group>"; };
+		2E09D54413C39DB200EA1002 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		2E09D54613C39DB200EA1002 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		2E09D54813C39DB200EA1002 /* ButtonCreator-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "ButtonCreator-Prefix.pch"; sourceTree = "<group>"; };
+		2E09D54913C39DB200EA1002 /* ButtonCreatorAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ButtonCreatorAppDelegate.h; sourceTree = "<group>"; };
+		2E09D54A13C39DB200EA1002 /* ButtonCreatorAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ButtonCreatorAppDelegate.m; sourceTree = "<group>"; };
+		2E09D55413C39DB200EA1002 /* TabBarCreatorViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TabBarCreatorViewController.h; sourceTree = "<group>"; };
+		2E09D55613C39DB200EA1002 /* TabBarCreatorViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TabBarCreatorViewController.m; sourceTree = "<group>"; };
+		2E09D56013C39DB300EA1002 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/TabBarCreatorViewController.xib; sourceTree = "<group>"; };
+		2E09D56713C39DE800EA1002 /* ButtonCreatorViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ButtonCreatorViewController.h; sourceTree = "<group>"; };
+		2E09D56813C39DE800EA1002 /* ButtonCreatorViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ButtonCreatorViewController.m; sourceTree = "<group>"; };
+		2E09D56913C39DE800EA1002 /* ButtonCreatorViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ButtonCreatorViewController.xib; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		2E09D53313C39DB200EA1002 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2E09D53B13C39DB200EA1002 /* UIKit.framework in Frameworks */,
+				2E09D53D13C39DB200EA1002 /* Foundation.framework in Frameworks */,
+				2E09D53F13C39DB200EA1002 /* CoreGraphics.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		2E09D52B13C39DB200EA1002 = {
+			isa = PBXGroup;
+			children = (
+				2E09D54013C39DB200EA1002 /* ButtonCreator */,
+				2E09D53913C39DB200EA1002 /* Frameworks */,
+				2E09D53713C39DB200EA1002 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		2E09D53713C39DB200EA1002 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				2E09D53613C39DB200EA1002 /* ButtonCreator.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		2E09D53913C39DB200EA1002 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				2E09D53A13C39DB200EA1002 /* UIKit.framework */,
+				2E09D53C13C39DB200EA1002 /* Foundation.framework */,
+				2E09D53E13C39DB200EA1002 /* CoreGraphics.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		2E09D54013C39DB200EA1002 /* ButtonCreator */ = {
+			isa = PBXGroup;
+			children = (
+				2E09D54913C39DB200EA1002 /* ButtonCreatorAppDelegate.h */,
+				2E09D54A13C39DB200EA1002 /* ButtonCreatorAppDelegate.m */,
+				2E09D56713C39DE800EA1002 /* ButtonCreatorViewController.h */,
+				2E09D56813C39DE800EA1002 /* ButtonCreatorViewController.m */,
+				2E09D55413C39DB200EA1002 /* TabBarCreatorViewController.h */,
+				2E09D55613C39DB200EA1002 /* TabBarCreatorViewController.m */,
+				2E09D56913C39DE800EA1002 /* ButtonCreatorViewController.xib */,
+				2E09D55F13C39DB300EA1002 /* TabBarCreatorViewController.xib */,
+				2E09D54113C39DB200EA1002 /* Supporting Files */,
+			);
+			path = ButtonCreator;
+			sourceTree = "<group>";
+		};
+		2E09D54113C39DB200EA1002 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				2E09D54213C39DB200EA1002 /* ButtonCreator-Info.plist */,
+				2E09D54313C39DB200EA1002 /* InfoPlist.strings */,
+				2E09D54613C39DB200EA1002 /* main.m */,
+				2E09D54813C39DB200EA1002 /* ButtonCreator-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		2E09D53513C39DB200EA1002 /* ButtonCreator */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 2E09D56413C39DB300EA1002 /* Build configuration list for PBXNativeTarget "ButtonCreator" */;
+			buildPhases = (
+				2E09D53213C39DB200EA1002 /* Sources */,
+				2E09D53313C39DB200EA1002 /* Frameworks */,
+				2E09D53413C39DB200EA1002 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = ButtonCreator;
+			productName = ButtonCreator;
+			productReference = 2E09D53613C39DB200EA1002 /* ButtonCreator.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		2E09D52D13C39DB200EA1002 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				ORGANIZATIONNAME = Gorectke;
+			};
+			buildConfigurationList = 2E09D53013C39DB200EA1002 /* Build configuration list for PBXProject "ButtonCreator" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 2E09D52B13C39DB200EA1002;
+			productRefGroup = 2E09D53713C39DB200EA1002 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				2E09D53513C39DB200EA1002 /* ButtonCreator */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		2E09D53413C39DB200EA1002 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2E09D54513C39DB200EA1002 /* InfoPlist.strings in Resources */,
+				2E09D55513C39DB200EA1002 /* TabBarCreatorViewController.h in Resources */,
+				2E09D56113C39DB300EA1002 /* TabBarCreatorViewController.xib in Resources */,
+				2E09D56B13C39DE800EA1002 /* ButtonCreatorViewController.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		2E09D53213C39DB200EA1002 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2E09D54713C39DB200EA1002 /* main.m in Sources */,
+				2E09D54B13C39DB200EA1002 /* ButtonCreatorAppDelegate.m in Sources */,
+				2E09D55713C39DB200EA1002 /* TabBarCreatorViewController.m in Sources */,
+				2E09D56A13C39DE800EA1002 /* ButtonCreatorViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		2E09D54313C39DB200EA1002 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				2E09D54413C39DB200EA1002 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		2E09D55F13C39DB300EA1002 /* TabBarCreatorViewController.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				2E09D56013C39DB300EA1002 /* en */,
+			);
+			name = TabBarCreatorViewController.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		2E09D56213C39DB300EA1002 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		2E09D56313C39DB300EA1002 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
+				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		2E09D56513C39DB300EA1002 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "ButtonCreator/ButtonCreator-Prefix.pch";
+				INFOPLIST_FILE = "ButtonCreator/ButtonCreator-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		2E09D56613C39DB300EA1002 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "ButtonCreator/ButtonCreator-Prefix.pch";
+				INFOPLIST_FILE = "ButtonCreator/ButtonCreator-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		2E09D53013C39DB200EA1002 /* Build configuration list for PBXProject "ButtonCreator" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2E09D56213C39DB300EA1002 /* Debug */,
+				2E09D56313C39DB300EA1002 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		2E09D56413C39DB300EA1002 /* Build configuration list for PBXNativeTarget "ButtonCreator" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2E09D56513C39DB300EA1002 /* Debug */,
+				2E09D56613C39DB300EA1002 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 2E09D52D13C39DB200EA1002 /* Project object */;
+}
