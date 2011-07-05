@@ -6,3 +6,5 @@ I plan on using it for my Mac Applications to add a TabBar. It can be used
 however you like. It is only designed to run in the simulator because it saves 
 the image to the Desktop directory. You must type in the user name used on the 
 computer for the image to be saved there.
+
+This Project works on 5.0 and below and I plan on updating it.
