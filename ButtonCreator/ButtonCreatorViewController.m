@@ -183,8 +183,6 @@
     [theData writeToFile:path atomically:NO];
     
     UIGraphicsEndImageContext();
-    
-    
 }
 
 @end
