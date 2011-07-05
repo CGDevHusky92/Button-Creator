@@ -46,19 +46,29 @@
     [super viewDidLoad];
 	// Do any additional setup after loading the view, typically from a nib.
     
+    userNameField.text = @""; //<- Change the blank string to a user name for easier use
+    picNameField.text = @"Button";
+    
     widthField.text = @"120";
     heightField.text = @"44";
     
-    hueField.text = @"0.267";
-    saturationField.text = @"1.000";
-    brightnessField.text = @"0.667";
-    alphaField.text = @"1.000";
+    hueField.text = @"0.267"; //0.607
+    saturationField.text = @"1.000"; //0.700
+    brightnessField.text = @"0.667"; //0.267
+    alphaField.text = @"1.000"; //0.300
+    
+    // Observe keyboard hide and show notifications to resize the text view appropriately.
+    [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(keyboardWillShow:) name:UIKeyboardWillShowNotification object:nil];
+    [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(keyboardWillHide:) name:UIKeyboardWillHideNotification object:nil];
 }
 
 -(void)viewDidUnload {
     [super viewDidUnload];
     // Release any retained subviews of the main view.
     // e.g. self.myOutlet = nil;
+    
+    [[NSNotificationCenter defaultCenter] removeObserver:self name:UIKeyboardWillShowNotification object:nil];
+    [[NSNotificationCenter defaultCenter] removeObserver:self name:UIKeyboardWillHideNotification object:nil];
 }
 
 -(void)viewWillAppear:(BOOL)animated {
@@ -82,17 +92,6 @@
     return (interfaceOrientation != UIInterfaceOrientationPortraitUpsideDown);
 }
 
--(void)touchesBegan:(NSSet *)touches withEvent:(UIEvent *)event {
-    [picNameField resignFirstResponder];
-    [userNameField resignFirstResponder];
-    [widthField resignFirstResponder];
-    [heightField resignFirstResponder];
-    [hueField resignFirstResponder];
-    [saturationField resignFirstResponder];
-    [brightnessField resignFirstResponder];
-    [alphaField resignFirstResponder];
-}
-
 //UIKeyboardWillShowNotification
 //Add Observer for this event ^
 #pragma mark -
@@ -101,7 +100,6 @@
 -(void)keyboardWillShow:(NSNotification *)notification {
     
 }
-
 
 -(void)keyboardWillHide:(NSNotification *)notification {
     [scrollView setScrollEnabled:YES];
@@ -117,8 +115,20 @@
     
     if (aTextField == picNameField) {
         [scrollView setContentOffset:CGPointMake(scrollView.contentOffset.x, 0) animated:YES];
+    } else if (aTextField == userNameField) {
+        [scrollView setContentOffset:CGPointMake(scrollView.contentOffset.x, 20) animated:YES];
+    } else if (aTextField == widthField) {
+        [scrollView setContentOffset:CGPointMake(scrollView.contentOffset.x, 50) animated:YES];
+    } else if (aTextField == heightField) {
+        [scrollView setContentOffset:CGPointMake(scrollView.contentOffset.x, 50) animated:YES];
+    } else if (aTextField == hueField) {
+        [scrollView setContentOffset:CGPointMake(scrollView.contentOffset.x, 100) animated:YES];
+    } else if (aTextField == saturationField) {
+        [scrollView setContentOffset:CGPointMake(scrollView.contentOffset.x, 100) animated:YES];
+    } else if (aTextField == brightnessField) {
+        [scrollView setContentOffset:CGPointMake(scrollView.contentOffset.x, 160) animated:YES];
     } else if (aTextField == alphaField) {
-        [scrollView setContentOffset:CGPointMake(scrollView.contentOffset.x, 120) animated:YES];
+        [scrollView setContentOffset:CGPointMake(scrollView.contentOffset.x, 160) animated:YES];
     }
     
     [scrollView setScrollEnabled:NO];
@@ -169,7 +179,7 @@
     
     [self.scrollViewTwo addSubview:theButton];
     
-    scrollViewTwo.contentSize = CGSizeMake(width + 20, height + 20);
+    scrollViewTwo.contentSize = CGSizeMake(width + 40, height + 40);
     
     UIGraphicsBeginImageContext(theButton.frame.size);
     CGContextRef theContext = UIGraphicsGetCurrentContext();

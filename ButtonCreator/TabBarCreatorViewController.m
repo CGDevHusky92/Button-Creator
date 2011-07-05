@@ -40,6 +40,9 @@
     [super viewDidLoad];
 	// Do any additional setup after loading the view, typically from a nib.
     
+    userNameField.text = @""; //<- Change the blank string to a user name for easier use
+    picNameField.text = @"TabBar";
+    
     widthField.text = @"250";
     heightField.text = @"44";
 }
